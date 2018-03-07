@@ -29,6 +29,8 @@ function buildResponseSimple(message,is_session_end=true,session_attributes={}){
     delete response.response.directives;
     return response;
 }
+
+
 function buildResponse(messages,is_session_end=true,session_attributes={}){
     const response = Object.assign({},responseTemplate);
     response.is_session_end=is_session_end;
